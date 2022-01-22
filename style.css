@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: 'Creepster', cursive;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Creepster', cursive;
+}
+
+#apresentacao {
+  min-width: 22rem;
+  max-width: 30rem;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
+  margin-bottom: -5rem;
+  position: relative;
+  display: block;
+}
+
+#apresentacao > h1 {
+  margin-bottom: 0.2rem;
+  text-align: center;
+  font-size: 2.85rem;
+  text-decoration: underline;
+}
+
+#interacoes {
+  font-size: 1.4rem;
+
+}
+
+.esconder{ /* as imagens ja vem escondidas por padrao, ao chamar a funcao do javascript elas serao mostradas */
+  display: none;
+}
+
+.mostrar {
+  display: flex;
+  padding: 1rem;
+  width: 30rem;
+}
+
+.mostrar > img {
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  
+  margin: auto;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5.2rem;
+  }
+
+.posicao{
+  border: 1px solid red;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  background-image: url("https://i.ibb.co/StzpN2x/backgroundposicao.png");
+}
+
+input {
+  display: flex;
+  background-color: black;
+  color: white;  
+  margin: auto;
+  margin-top: 0.2rem;
+  padding: 0.2rem 0.2rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.imgfinal {
+  display: flex;
+  margin: auto;
+}
+
+.final {
+  display: inline;
+}

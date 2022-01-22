@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onmousemove="tocarTema()">
+    <div id="apresentacao">
+      <audio id="temaMusica" src="/fundotema.mp3" loop></audio>
+      <audio id="gritoMusica" src="/scream.mp3"></audio>
+      <h1>Tente sair vivo daqui</h1>
+      <div id="interacoes">
+        <input
+          type="text"
+          name="jogador1"
+          id="jogador1"
+          placeholder="Nome do 1º assassino&#x1F52A;"
+          maxlength="10"
+        />
+        <input
+          type="text"
+          name="jogador2"
+          id="jogador2"
+          placeholder="Nome do 2º assassino&#x1F52A;"
+          maxlength="10"
+        />
+        <input
+          id="start"
+          type="button"
+          value="&#x1FA78;COMEÇAR&#x1FA78;"
+          onclick="comecar()"
+        />
+      </div>
+      <div id="imagens" class="esconder">
+        <img
+          src="https://i.ibb.co/1qSLnfW/leatherface.png"
+          id="cachorro"
+          onclick="escolherPersonagem(0)"
+        />
+        <img
+          src="https://i.ibb.co/Db62kCr/fred.png"
+          id="coelho"
+          onclick="escolherPersonagem(1)"
+        />
+        <img
+          src="https://i.ibb.co/0ZbL6tD/jason.png"
+          id="gato"
+          onclick="escolherPersonagem(2)"
+        />
+        <img
+          src="https://i.ibb.co/26rRsgh/it.png"
+          id="passaro"
+          onclick="escolherPersonagem(3)"
+        />
+        <img
+          src="https://i.ibb.co/SPNhqHJ/freira.png"
+          id="porco"
+          onclick="escolherPersonagem(4)"
+        />
+      </div>
+    </div>
+    <div id="container">
+      <div id="primeiracoluna">
+        <div class="posicao" onclick="jogando(0)"></div>
+        <div class="posicao" onclick="jogando(1)"></div>
+        <div class="posicao" onclick="jogando(2)"></div>
+      </div>
+      <div id="segundacoluna">
+        <div class="posicao" onclick="jogando(3)"></div>
+        <div class="posicao" onclick="jogando(4)"></div>
+        <div class="posicao" onclick="jogando(5)"></div>
+      </div>
+      <div id="terceiracoluna">
+        <div class="posicao" onclick="jogando(6)"></div>
+        <div class="posicao" onclick="jogando(7)"></div>
+        <div class="posicao" onclick="jogando(8)"></div>
+      </div>
+    </div>
+    <script src="scriptjogodavelha.js"></script>
+  </body>
+</html>
